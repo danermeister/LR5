@@ -54,8 +54,9 @@ map.insert(make_pair(7, "stop"));
     
     
 //  2
-    char rez=count_if(map2.cbegin(), map2.cend(), check);
-        cout<<"Vsego elementov: "<<rez<<endl;
+    int rez = map2.size();
+
+        cout<<"Vsego elementov: "<< rez << endl;
     
     vector<int> MyVec;
     transform(map2.cbegin(),map2.cend(),back_inserter(MyVec), doVec);
@@ -80,5 +81,6 @@ map.insert(make_pair(7, "stop"));
     set<int> MySet;
         MySet.insert(MyVec.begin(),MyVec.end());
             for_each(MySet.cbegin(), MySet.cend(), printV);
+    cout<<endl;
 return 0;
 }
